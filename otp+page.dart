@@ -75,7 +75,7 @@ class OtpPage extends StatelessWidget {
             const SizedBox(
               height: 18.0,
             ),
-        
+
             PinCodeTextField(
               appContext: context,
               length: 4,
