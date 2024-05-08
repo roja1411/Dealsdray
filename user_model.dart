@@ -16,6 +16,7 @@ class UserModel {
   String? email;
   String? password;
   int? referralCode;
+  String? token;
 
   UserModel({
     this.mobileNumber,
@@ -25,6 +26,7 @@ class UserModel {
     this.email,
     this.password,
     this.referralCode,
+    this.token,
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
@@ -35,6 +37,7 @@ class UserModel {
     email: json["email"],
     password: json["password"],
     referralCode: json["referralCode"],
+    token: json["token"],
   );
 
   Map<String, dynamic> toJson() => {
@@ -45,5 +48,6 @@ class UserModel {
     "email": email,
     "password": password,
     "referralCode": referralCode,
+    "token": token,
   };
 }
